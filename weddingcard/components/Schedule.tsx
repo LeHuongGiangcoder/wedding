@@ -25,9 +25,9 @@ export default function Schedule() {
   return (
     <section id="the-event" className="py-24 md:py-40 px-6 md:px-12 bg-foreground text-background">
       <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-20 md:mb-32">
+        <div className="text-center mb-16 md:mb-32">
           <p className="text-xs uppercase tracking-[0.3em] mb-6 opacity-50">The Event</p>
-          <h2 className="font-editorial text-5xl md:text-7xl">Schedule of Events</h2>
+          <h2 className="font-editorial text-4xl md:text-5xl lg:text-7xl">Schedule of Events</h2>
         </div>
         
         <div className="relative border-l border-background/20 pl-8 md:pl-0 md:border-l-0">
@@ -36,10 +36,10 @@ export default function Schedule() {
           <div className="space-y-16 md:space-y-24">
             {events.map((item, i) => (
               <div key={i} className={`relative flex flex-col md:flex-row items-start md:items-center ${i % 2 === 0 ? "md:flex-row-reverse" : ""}`}>
-                <div className="hidden md:block absolute left-1/2 w-3 h-3 bg-background transform -translate-x-1/2 rounded-full"></div>
+                <div className="absolute -left-8 md:left-1/2 w-3 h-3 bg-background transform -translate-x-[5px] md:-translate-x-1/2 rounded-full top-3 md:top-auto md:mt-0"></div>
                 
                 <div className={`w-full md:w-1/2 ${i % 2 === 0 ? "md:pl-16" : "md:pr-16 text-left md:text-right"}`}>
-                  <p className="font-editorial text-4xl md:text-5xl mb-3">{item.time}</p>
+                  <p className="font-editorial text-3xl md:text-4xl lg:text-5xl mb-3">{item.time}</p>
                 </div>
                 
                 <div className={`w-full md:w-1/2 mt-4 md:mt-0 ${i % 2 === 0 ? "md:pr-16 text-left md:text-right" : "md:pl-16"}`}>

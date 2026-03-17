@@ -42,9 +42,9 @@ export default function Hero() {
       </div>
       
       <div className="relative z-10 text-center text-[#faf8f1] px-4 pt-16 mt-16 max-w-5xl">
-        <h1 className="font-editorial text-7xl md:text-9xl lg:text-[10rem] flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 leading-none mb-12">
+        <h1 className="font-editorial text-6xl md:text-8xl lg:text-[10rem] flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 leading-none mb-12">
           <span id="title-1" className="block transform-gpu">Oliver</span> 
-          <span id="title-2" className="italic font-light text-5xl md:text-7xl lg:text-9xl opacity-80 transform-gpu">&</span> 
+          <span id="title-2" className="italic font-light text-5xl md:text-7xl lg:text-9xl opacity-80 transform-gpu my-2 md:my-0">&</span> 
           <span id="title-3" className="block transform-gpu">Nguyen</span>
         </h1>
         <p id="subtitle" className="text-xs md:text-sm tracking-[0.4em] uppercase opacity-90 mx-auto max-w-md transform-gpu">

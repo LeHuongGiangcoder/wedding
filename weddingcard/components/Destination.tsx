@@ -3,9 +3,9 @@ import Image from "next/image";
 export default function Destination() {
   return (
     <section id="destination" className="py-24 md:py-40 px-6 md:px-12 max-w-7xl mx-auto">
-      <div className="text-center mb-20 md:mb-32">
+      <div className="text-center mb-16 md:mb-32">
         <p className="text-xs uppercase tracking-[0.3em] mb-6 opacity-50">Destination</p>
-        <h2 className="font-editorial text-5xl md:text-7xl mb-8">Villa Balbiano, Lake Como</h2>
+        <h2 className="font-editorial text-4xl md:text-5xl lg:text-7xl mb-6 md:mb-8">Villa Balbiano, Lake Como</h2>
         <p className="max-w-2xl mx-auto opacity-70 text-sm md:text-base leading-relaxed">
           Situated on the western shore of Lake Como, Villa Balbiano is an awe-inspiring 
           historical palazzo that once belonged to the famous Cardinal Tolomeo Gallio.
@@ -36,7 +36,7 @@ export default function Destination() {
             />
           </div>
           
-          <div className="bg-foreground text-background p-8 md:p-16 lg:-ml-32 relative z-20">
+          <div className="bg-foreground text-background p-8 md:p-16 relative z-20 -mt-12 mx-4 md:mx-0 md:mt-0 lg:-ml-32">
             <h3 className="font-editorial text-3xl md:text-4xl mb-6">Travel & Stay</h3>
             <p className="opacity-80 text-sm md:text-base leading-relaxed mb-8">
               Milan Malpensa (MXP) is the closest international airport. 

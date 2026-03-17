@@ -7,7 +7,7 @@ export default function DressCode() {
         
         <div className="w-full lg:w-1/2">
           <p className="text-xs uppercase tracking-[0.3em] mb-6 opacity-50">Dress Code</p>
-          <h2 className="font-editorial text-5xl md:text-6xl lg:text-7xl mb-10 leading-tight">
+          <h2 className="font-editorial text-4xl md:text-5xl lg:text-7xl mb-6 md:mb-10 leading-tight">
             Cinematic Noir & <br/> Old World Glamour
           </h2>
           <div className="space-y-6 text-sm md:text-base leading-relaxed opacity-80 mb-10">

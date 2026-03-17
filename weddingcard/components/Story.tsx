@@ -15,20 +15,20 @@ export default function Story() {
               className="object-cover grayscale hover:grayscale-0 transition-all duration-700" 
             />
           </div>
-          <div className="absolute -bottom-10 -right-4 lg:-right-12 w-48 h-56 hidden md:block z-10">
+          <div className="absolute -bottom-6 -right-2 md:-bottom-10 md:-right-4 lg:-right-12 w-32 h-40 md:w-40 md:h-48 lg:w-48 lg:h-56 z-10">
             <Image 
               src="/assets/5.jpg" 
               alt="Hands" 
               fill 
-              sizes="200px"
-              className="object-cover border-8 border-background" 
+              sizes="(max-width: 768px) 150px, 200px"
+              className="object-cover border-4 md:border-8 border-background" 
             />
           </div>
         </div>
         
-        <div className="w-full lg:w-1/2 max-w-lg">
+        <div className="w-full lg:w-1/2 max-w-lg mt-8 md:mt-0">
           <p className="text-xs uppercase tracking-[0.3em] mb-6 opacity-50">Our Story</p>
-          <h2 className="font-editorial text-5xl md:text-7xl mb-8 leading-[1.1]">
+          <h2 className="font-editorial text-4xl md:text-5xl lg:text-7xl mb-8 leading-[1.1]">
             A love born in <br /> the eternal city.
           </h2>
           <div className="space-y-6 text-sm md:text-base leading-relaxed opacity-80 font-light">

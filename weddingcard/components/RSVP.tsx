@@ -2,10 +2,10 @@
 
 export default function RSVP() {
   return (
-    <section id="rsvp" className="py-32 md:py-48 px-6 md:px-12 bg-[#e6e2d6] text-foreground">
+    <section id="rsvp" className="py-24 md:py-40 px-6 md:px-12 bg-[#e6e2d6] text-foreground">
       <div className="max-w-3xl mx-auto text-center">
         <p className="text-xs uppercase tracking-[0.3em] mb-6 opacity-50">You're Invited</p>
-        <h2 className="font-editorial text-5xl md:text-7xl mb-16">RSVP</h2>
+        <h2 className="font-editorial text-4xl md:text-6xl lg:text-7xl mb-10 md:mb-16">RSVP</h2>
         
         <form className="space-y-10 text-left max-w-xl mx-auto" onSubmit={(e) => e.preventDefault()}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8">
