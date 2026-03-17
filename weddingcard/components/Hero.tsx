@@ -8,24 +8,38 @@ export default function Hero() {
   const comp = useRef(null);
 
   useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-      const t1 = gsap.timeline();
-      t1.from(["#title-1", "#title-2", "#title-3"], {
-        y: 40,
-        opacity: 0,
-        duration: 1.5,
-        stagger: 0.2,
-        ease: "power4.out",
-        delay: 0.5
-      }).from("#subtitle", {
-        opacity: 0,
-        y: 20,
-        duration: 2,
-        ease: "power2.out"
-      }, "-=1");
-    }, comp);
-    
-    return () => ctx.revert();
+    // Only play the Hero animation after the custom 'intro-done' event is fired 
+    // by the Intro component, or immediately if we bypassed the intro.
+    const playHeroAnimation = () => {
+      let ctx = gsap.context(() => {
+        const t1 = gsap.timeline();
+        t1.from(["#title-1", "#title-2", "#title-3"], {
+          y: 40,
+          opacity: 0,
+          duration: 1.5,
+          stagger: 0.2,
+          ease: "power4.out",
+          delay: 0.2
+        }).from("#subtitle", {
+          opacity: 0,
+          y: 20,
+          duration: 2,
+          ease: "power2.out"
+        }, "-=1");
+      }, comp);
+      
+      return () => ctx.revert();
+    };
+
+    const handleIntroDone = () => {
+      playHeroAnimation();
+    };
+
+    window.addEventListener("intro-done", handleIntroDone);
+
+    return () => {
+      window.removeEventListener("intro-done", handleIntroDone);
+    };
   }, []);
 
   return (

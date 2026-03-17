@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import GsapProvider from "../components/GsapProvider";
+import Intro from "../components/Intro";
 
 const editorialNew = localFont({
   src: [
@@ -70,6 +71,7 @@ export default function RootLayout({
       <body
         className={`${suisse.variable} ${editorialNew.variable} font-suisse antialiased bg-background text-foreground`}
       >
+        <Intro />
         <GsapProvider>
           {children}
         </GsapProvider>
